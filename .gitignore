@@ -59,8 +59,6 @@ def shannon(l, h, p):
         shannon(l, k, p)
         shannon(k + 1, h, p)
      
- 
- 
 # Function to sort the symbols
 # based on their probability or frequency
 def sortByProbability(n, p):
@@ -78,8 +76,6 @@ def sortByProbability(n, p):
                 p[i + 1].sym = temp.sym
              
          
-     
- 
  
 # function to display shannon codes
 def display(n, p):
@@ -97,7 +93,7 @@ if __name__ == '__main__':
  
     # Input number of symbols
     print("Enter number of symbols\t: ",end='')
-    n = 5
+    n = 26
     print(n)
     i=0
     # Input symbols
@@ -111,7 +107,7 @@ if __name__ == '__main__':
      
  
     # Input probability of symbols
-    x = [0.22, 0.28, 0.15, 0.30, 0.05]
+    x = [0.12702, 0.09056, 0.08167, 0.07507, 0.06966, 0.06749, 0.06327, 0.06094, 0.059870, .04253, 0.04025, 0.02782, 0.02758, 0.02406, 0.0236, 0.02228, 0.02015, 0.01974, 0.01929, 0.01492, 0.00978, 0.00772, 0.00153, 0.0015, 0.00095, 0.00075,]
     for i in range(n):
         print("\nEnter probability of", p[i].sym, ": ",end="")
         print(x[i])
